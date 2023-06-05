@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Encuesta de satisfacción</title>
+  <link rel="stylesheet"
+  href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Encuesta de satisfacción</h1>
+    <p id="description">Por favor, completa esta encuesta para ayudarnos a mejorar nuestro servicio.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Nombre completo:</label>
+      <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+
+      <label for="email" id="email-label">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+      <label for="number" id="number-label">Edad:</label>
+      <input type="number" id="number" name="age" placeholder="Ingresa tu edad" min="18" max="120" required>
+
+      <label for="dropdown">¿Cómo nos conociste?</label>
+      <select id="dropdown" name="how">
+        <option value="amigos">Por amigos o familiares</option>
+        <option value="internet">A través de internet</option>
+        <option value="publicidad">Por publicidad</option>
+        <option value="otros">Otros</option>
+      </select>
+
+      <label>¿Qué te pareció nuestro servicio?</label>
+      <label>
+        <input type="radio" name="opinion" value="excelente" required>Excelente
+      </label>
+      <label>
+        <input type="radio" name="opinion" value="bueno" required>Bueno
+      </label>
+      <label>
+        <input type="radio" name="opinion" value="regular" required>Regular
+      </label>
+      <label>
+        <input type="radio" name="opinion" value="malo" required>Malo
+      </label>
+
+      <label>¿Cuál de los siguientes servicios utilizaste?</label>
+      <label>
+        <input type="checkbox" name="services" value="reservas">Reservas
+      </label>
+      <label>
+        <input type="checkbox" name="services" value="entrega">Entrega a domicilio
+      </label>
+      <label>
+        <input type="checkbox" name="services" value="pago">Pago en línea
+      </label>
+      <label>
+        <input type="checkbox" name="services" value="otros">Otros
+      </label>
+
+      <label for="comments">Comentarios adicionales:</label>
+      <textarea id="comments" name="comments" rows="5" placeholder="Ingresa tus comentarios"></textarea>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </body>
+</html>
