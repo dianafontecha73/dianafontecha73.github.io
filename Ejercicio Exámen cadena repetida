@@ -1,0 +1,11 @@
+/* Crear cadena que contenga letras o signos repetidos */
+let char = ""
+let repeticiones = 0
+do{
+    char = prompt("Elige caracter(* o a): ")
+} while(char != "*" && char !="a")
+do{
+    repeticiones = parseInt(prompt("Introduce un número del 1 al 15:"))
+} while(repeticiones < 1 && repeticiones > 15)
+alert(char.repeat(repeticiones))
+ 
